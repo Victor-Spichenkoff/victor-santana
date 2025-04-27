@@ -1,0 +1,86 @@
+.formation h1 {
+    margin-bottom: 30px;
+}
+
+.formation h2 {
+    margin: 0 0 20px 10px;
+}
+
+.formation main {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0,0,0,.2);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.445);
+}
+
+.card {
+    background-color: rgb(31 41 55);
+    height: 115px;
+    display: flex;
+    min-width: 350px;
+    width: 47%;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card.bach::after {
+    content: "Bacharelado";
+    position: absolute;
+    border: 4px solid rgb(202 138 4);
+    color: black;
+    background-color: rgb(250 204 21);
+    top: 16px;
+    right: -17px;
+    box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.377);
+    transform: rotate(40deg);
+    padding: 4px 8px; 
+    border-radius: 4px;
+    font-weight: 700;
+    z-index: 2;
+    opacity: .9;
+                
+}
+
+.card img {
+    width: 100px;
+    background-color: white;
+    height: auto;
+    scale: 1;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.state-container {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(156,163,175,.8);
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.state-bar {
+    height: 100%;
+    background-color: rgb(22 163 74);
+    width: 100%;
+}
+
+
+
+#bar-35 {
+    width: 35%;
+}
+
+#bar-80 {
+    width: 80%;
+}

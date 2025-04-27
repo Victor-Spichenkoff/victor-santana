@@ -1,11 +1,13 @@
-const inputs = document.querySelectorAll(".menu-link")
+const inputs = document.querySelectorAll("nav a")
 
 
-const getInput = (document) => {
-    console.log(document)
+const getInput = (documentName) => {
     inputs.forEach(input => {
         
-        if(input.innerText.toLowerCase() == document)
-            input.classList.add("link-active")
+        console.log(input.innerText.toLowerCase() == documentName)
+        if (input.innerText.toLowerCase() == documentName) {
+            input.classList.add("active")         
+            input.preventDefault()
+        }
     })
 }

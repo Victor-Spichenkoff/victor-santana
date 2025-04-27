@@ -25,7 +25,6 @@ h3 {
 }
 
 hr {
-    /* w-40 h-3 my-8 bg-black border-0 dark:bg-white/85; */
     width: 120px;
     height: 9px;
     margin: 24px 0;
@@ -38,6 +37,9 @@ p {
     color: rgb(219, 219, 219);
 }
 
+
+
+/* Normal links, inline */
 a {
     color: var(--link-color);
     font-weight: 900;
@@ -59,7 +61,8 @@ a::before {
     transition: width .5s;
 }
 
-a:hover::before {
+a:hover::before,
+a.active::before {
     width: 100%;
 }
 
@@ -90,20 +93,75 @@ a:hover::before {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     max-width: 450px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .text-logo img {
-    margin-top: -68px;
+    margin-top: -37px;
 }
 
 .link-active {
     background-color: rgb(22 163 74);
 }
 
+
+
+/* MENU */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-logo {
+    width: 70px;
+    color: rgb(96, 165, 250);
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.menu a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(96, 165, 250);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.menu a:hover, a.active {
+    color: rgb(96, 165, 250);
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+
+
 /* Animações */
 .showOnLoad {
-    /* animation-delay: ; */
     animation: showOnStart .5s ease-in-out forwards;
 }
 
@@ -122,7 +180,7 @@ a:hover::before {
 
 
 @media screen and (max-width: 500px) {
-    .text-logo img {
+    .text-logo img, .menu-logo {
         display: none;
     }
 }
