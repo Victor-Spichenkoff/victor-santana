@@ -8,6 +8,8 @@
 
 :root {
     --link-color: rgb(96 165 250);
+    --card-bg: rgb(31 41 55);
+    --p-color: rgb(219, 219, 219);
 }
 
 body {
@@ -34,7 +36,7 @@ hr {
 
 p {
     line-height: 23px;
-    color: rgb(219, 219, 219);
+    color: var(--p-color);
 }
 
 
