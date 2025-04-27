@@ -1,0 +1,56 @@
+.projects main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px 30px 0 30px;
+}
+
+.projects .card {
+    padding: 10px 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+
+.projects .card:hover {
+    transform: scale(1.04);
+    box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.projects .card-text {
+    flex: 1;
+}
+
+.projects h2{
+    color: var(--p-color);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.projects .card p {
+    color: rgb(55 65 81);
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.projects .card img  {
+    max-width: 100%;
+    max-width: 410px;
+}
+
+
+/* Fix global link */
+a:hover::before {width: 0;}
+
+
+@media screen and (max-width: 700px) {
+    .card img {
+        display: none;
+    }
+}
