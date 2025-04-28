@@ -1,0 +1,47 @@
+.contact {
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label, input {
+    font-size: 20px;
+    display: block;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: rgba(245, 245, 245, 0.781);
+}
+
+input:not([type="submit"]):focus {
+    outline: none;
+    border-bottom: 5px solid black;
+}
+
+
+
+.send-button {
+    background-color: transparent;
+    border: var(--button-color) solid 2px;
+    border-radius: 8px;
+    color: whitesmoke;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: ease-in .125s;
+
+    &:hover, &:focus {
+        background-color: var(--button-color);
+        color: black;
+    }
+}
