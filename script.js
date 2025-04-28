@@ -7,7 +7,7 @@ const getInput = (documentName) => {
         console.log(input.innerText.toLowerCase() == documentName)
         if (input.innerText.toLowerCase() == documentName) {
             input.classList.add("active")         
-            input.preventDefault()
+            input.addEventListener("click", (e) => e.preventDefault())
         }
     })
 }
