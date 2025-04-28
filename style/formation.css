@@ -19,6 +19,7 @@
     border-radius: 20px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.445);
     margin: 0 20px;
+    margin-bottom: 60px;
 }
 
 .card {
@@ -31,6 +32,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 7px;
+    
 }
 
 
@@ -86,4 +88,10 @@
 
 #bar-80 {
     width: 80%;
+}
+
+@media screen and (max-width:820px) {
+    .card {
+        width: 100%;
+    }
 }

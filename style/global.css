@@ -13,12 +13,19 @@
     --p-color: rgb(219, 219, 219);
 }
 
-body {
+html {
+    height: 100vh;
     background: linear-gradient(135deg, #0f172a, #1e293b);
+    overflow: hidden;
+}
+
+body {
+    /* background: linear-gradient(135deg, #0f172a, #1e293b); */
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(243 244 246);
     height: 100vh;
-    overflow-y: visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -42,7 +49,6 @@ p {
 }
 
 
-
 /* Normal links, inline */
 a {
     color: var(--link-color);
@@ -50,7 +56,6 @@ a {
     position: relative;
     text-decoration: none;
 }
-
 
 
 a::before {
@@ -165,16 +170,16 @@ a.active {
 }
 
 
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
 }
 
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent;
     opacity: 0;
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: royalblue;
     border-radius: 20px;
 }
@@ -205,4 +210,10 @@ a.active {
     .menu-logo {
         display: none;
     }
+}
+
+@media screen and (max-width: 340px) {
+body {
+    overflow-x: scroll;
+}
 }
