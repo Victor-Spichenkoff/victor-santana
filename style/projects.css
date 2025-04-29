@@ -1,5 +1,4 @@
 .projects header {
-    /* margin-top: 100px; */
    text-align: center;
 }
 
@@ -17,6 +16,7 @@
     flex-direction: column;
     gap: 40px;
     margin: 40px 30px 60px 30px;
+    padding-bottom: 60px;
 }
 
 .projects .card {
@@ -64,6 +64,7 @@
 a:hover::before {width: 0;}
 
 
+/* Resposiviy */
 @media screen and (max-width: 776px) {
     .card img {
         display: none;

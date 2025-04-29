@@ -1,3 +1,7 @@
+.formation .center {
+    height: 100%;
+}
+
 .formation h1 {
     margin-bottom: 30px;
 }
@@ -5,6 +9,13 @@
 .formation h2 {
     margin: 0 0 20px 10px;
 }
+
+.formation .center {
+    padding: 100px 0 60px 0;
+    overflow: visible;
+    height: fit-content;
+}
+
 
 .formation main {
     width: fit-content;
@@ -16,10 +27,9 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
-    border-radius: 20px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.445);
+        border-radius: 20px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.445);
     margin: 0 20px;
-    margin-bottom: 60px;
 }
 
 .card {
