@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll("nav a")
 
-
+// To show the correct menu active page
 const getInput = (documentName) => {
     inputs.forEach(input => {
 

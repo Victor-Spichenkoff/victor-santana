@@ -1,21 +1,23 @@
 .formation .center {
     height: 100%;
+    padding: 100px 0 60px 0;
+    overflow: visible;
+}
+
+.formation .center-container {
+    height: fit-content;
+
+    overflow: visible;
 }
 
 .formation h1 {
+    text-align: center;
     margin-bottom: 30px;
 }
 
 .formation h2 {
     margin: 0 0 20px 10px;
 }
-
-.formation .center {
-    padding: 100px 0 60px 0;
-    overflow: visible;
-    height: fit-content;
-}
-
 
 .formation main {
     width: fit-content;
