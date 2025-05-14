@@ -47,7 +47,7 @@
     
 }
 
-
+/* add tag to card */
 .card.bach::after {
     content: "Bacharelado";
     position: absolute;
