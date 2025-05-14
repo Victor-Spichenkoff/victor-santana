@@ -1,3 +1,14 @@
+/* Fix no scroll for formation page */
+html {
+    overflow: visible;
+}
+
+body {
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Visual styles */
 .formation .center {
     height: 100%;
     padding: 100px 0 60px 0;
@@ -102,7 +113,10 @@
     width: 80%;
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:878px) {
+/* @media screen and (max-width:820px) { */
+
+    
     .card {
         width: 100%;
     }
